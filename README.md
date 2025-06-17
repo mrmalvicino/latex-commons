@@ -1,7 +1,7 @@
 # LaTeX Commons
 
 &nbsp;
-Comandos, paquetes y entornos para documentos LaTeX.
+Paquetes, comandos y entornos para documentos LaTeX.
 
 ## Setup
 
@@ -26,7 +26,15 @@ git clone --recurse-submodules <repo>
 ```
 
 &nbsp;
-Si ya se clonó sin submódulos, inicializarlos con:
+Si ya se clonó sin submódulos, inicializarlos con
 ```bash
 git submodule update --init --recursive
+```
+
+&nbsp;
+Para restaurar la referencia desde un proyecto consumidor, dirigirse a `utils/latex-commons` y ejecutar
+```bash
+git fetch origin
+git checkout main
+git pull origin main
 ```
