@@ -121,3 +121,8 @@
         }
     }
 }
+
+% Radián por segundo
+\NewDocumentCommand{\radpers}{o}{
+    \IfNoValueTF{#1}{\si{\radian \per \second}}{\SI{#1}{\radian \per \second}}
+}
